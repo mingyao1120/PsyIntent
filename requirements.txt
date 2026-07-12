@@ -1,0 +1,29 @@
+# PsyIntent core dependencies.
+# Versions are given as tested lower bounds; newer compatible versions generally work.
+
+# PyTorch (the code uses torch.amp / weights_only APIs — PyTorch >= 2.1)
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Text encoder
+transformers>=4.36.0
+sentencepiece
+
+# Data augmentation
+randaugment>=1.0.2
+aug-lib>=0.1.0
+opencv-python
+Pillow
+
+# Numerics / metrics
+numpy
+scipy
+scikit-learn
+pandas
+
+# Logging / utilities
+tensorboard
+tqdm
+einops
+PyYAML
+easydict

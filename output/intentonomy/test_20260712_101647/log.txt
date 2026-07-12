@@ -1,0 +1,37 @@
+[07/12 10:16:50.263]: Command: test.py --dataname intentonomy --resume /repository/emo/psy_intent_portable/reproduction/PsyIntent/intentonomy/intentonomy_best.pth.tar --output /repository/emo/psy_intent_portable/reproduction/PsyIntent/intentonomy/../output/intentonomy/test_20260712_101647 --batch-size 64 --num_class 28 --arch R101-448 --backbone resnet101 --img_size_hight 224 --img_size_weight 224 --seed 666
+[07/12 10:16:50.263]: Single-GPU test mode
+[07/12 10:16:53.166]: => loading checkpoint '/repository/emo/psy_intent_portable/reproduction/PsyIntent/intentonomy/intentonomy_best.pth.tar'
+[07/12 10:16:54.046]: => loaded checkpoint '/repository/emo/psy_intent_portable/reproduction/PsyIntent/intentonomy/intentonomy_best.pth.tar' (epoch 14)
+[07/12 10:16:54.047]:    best_f1_samples: 0.5713361382036082
+[07/12 10:16:54.986]: Loading BERT model...
+[07/12 10:16:58.641]: BERT loaded.
+[07/12 10:16:58.747]: Train: 12740, Val: 498, Test: 1217
+[07/12 10:16:58.747]: === Validation ===
+[07/12 10:17:06.740]: Test: [0/8]  Time 7.992 (7.992)  Loss 1.532 (1.532)  Mem 2257
+[07/12 10:17:14.160]: => Done inference, calculating metrics...
+[07/12 10:17:14.355]:   mAP: 52.33452
+[07/12 10:17:14.355]:   aps: [86.11294 76.79513 42.89126 27.21608 39.14646 50.26986 60.30938 86.85065
+ 28.98543 27.15033 80.76801 62.06205 31.91224 22.14289 87.90323 84.46464
+ 98.43098 44.64581 32.47035 87.92412 23.70795 24.32105 64.97359 49.17002
+ 23.96459 16.93122 61.0997  42.74676]
+[07/12 10:17:14.355]:   f1_micros: 0.56137
+[07/12 10:17:14.355]:   f1_macros: 0.46006
+[07/12 10:17:14.355]:   f1_samples: 0.57134
+[07/12 10:17:14.355]: Avg inference time per batch: 0.1041s
+[07/12 10:17:14.355]:  * val mAP 52.33452
+[07/12 10:17:14.355]: Val: f1_micros=0.5613671672708441, f1_macros=0.4600643624774104, f1_samples=0.5713361382036081
+[07/12 10:17:14.355]: === Test ===
+[07/12 10:17:24.329]: Test: [ 0/20]  Time 9.973 (9.973)  Loss 1.363 (1.363)  Mem 2257
+[07/12 10:17:45.378]: Test: [10/20]  Time 0.229 (2.820)  Loss 1.575 (1.648)  Mem 2257
+[07/12 10:18:05.488]: => Done inference, calculating metrics...
+[07/12 10:18:05.851]:   mAP: 47.85340
+[07/12 10:18:05.852]:   aps: [83.74084 80.03201 27.17489 17.64698 51.35593 30.71193 58.49244 91.68987
+ 31.16021 41.84597 74.67435 54.12529 38.68966 25.81418 63.08149 67.18819
+ 94.53473 21.02342 27.11537 90.89609 21.01812 13.23135 51.86453 41.86086
+ 23.67269 26.50211 65.12019 25.63157]
+[07/12 10:18:05.852]:   f1_micros: 0.53781
+[07/12 10:18:05.852]:   f1_macros: 0.42476
+[07/12 10:18:05.852]:   f1_samples: 0.54015
+[07/12 10:18:05.852]: Avg inference time per batch: 0.0617s
+[07/12 10:18:05.852]:  * test mAP 47.85340
+[07/12 10:18:05.852]: Test: f1_micros=0.5378051200635047, f1_macros=0.4247609260886582, f1_samples=0.54014656483843
