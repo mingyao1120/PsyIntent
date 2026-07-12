@@ -122,6 +122,18 @@ Download the pre-trained EAMB-Net checkpoint from the official repository
 `'model'` key). The emotion encoder loads this path automatically; override it
 with the `PSYINTENT_EMOTION_WEIGHTS` environment variable if needed.
 
+### Trained Intentonomy checkpoint
+
+The trained Intentonomy checkpoint is provided as a release asset (≈943 MB):
+
+<https://github.com/mingyao1120/PsyIntent/releases/download/intentonomy-best/intentonomy_best.pth.tar>
+
+Download it and place it at `intentonomy/intentonomy_best.pth.tar`, then evaluate with:
+
+```bash
+bash intentonomy/test.sh intentonomy/intentonomy_best.pth.tar
+```
+
 ## Data preparation
 
 The annotation files PsyIntent needs — including the **MLLM psychological-analysis
